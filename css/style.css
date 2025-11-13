@@ -184,6 +184,7 @@ section {
     opacity: 0;
     transform: scale(0.9);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    box-sizing: border-box;
 }
 
 .timeline-item.is-visible {
@@ -336,7 +337,7 @@ section {
     .timeline-item:nth-child(even) {
         width: 100%;
         padding-left: 60px;
-        padding-right: 10px;
+        padding-right: 25px;
         left: 0;
     }
 
@@ -352,5 +353,9 @@ section {
         left: -10px;
         border-width: 10px 10px 10px 0;
         border-color: transparent var(--color-claro) transparent transparent;
+    }
+
+    .timeline-content h3 {
+        max-width: 100%;
     }
 }
